@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag to Bookmark Bar</title>
+</head>
+<body>
+    <h1>drag now! </h1>
+    <p>do it sigma now</p>
+    
+    <a href="javascript:(function(){var userJSON=localStorage.getItem('user');if(userJSON){var userObj=JSON.parse(userJSON);var currentToken=userObj.user.access_token;var newToken=prompt('Change your access token:',currentToken);if(newToken&&newToken!==currentToken){userObj.user.access_token=newToken;localStorage.setItem('user',JSON.stringify(userObj));alert('Access token updated!');}}else{alert('User data not found in localStorage.');}})();"
+       style="font-size: 18px; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+        Get/Update Access Token
+    </a>
+</body>
+</html>
